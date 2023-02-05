@@ -20,7 +20,7 @@ A famous example of Association Mining is the **if-then** relationship found whe
 
 This is the association mining pipeline:
 
-![Untitled](Apriori%20Algorithm%20db01a4ff834648e68c2bdb4fe8edf979/Untitled.png)
+![Untitled](CommonAlgorithmsExplained/Untitled.png)
 
 The Apriori Algorithm is found in the second step of the pipeline. 
 
