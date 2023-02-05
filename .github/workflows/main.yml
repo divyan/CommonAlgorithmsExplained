@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: igor-kupczynski/notion-exporter@v1.0.2
         with:
-          pages: "db01a4ff834648e68c2bdb4fe8edf979"  # Pages IDs identified in (step 2)  
+          pages: "Apriori-Algorithm-db01a4ff834648e68c2bdb4fe8edf979"  # Identifier  
           output-dir: apriori_algorithm
           notion-token: ${{ secrets.NOTION_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
