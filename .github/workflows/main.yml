@@ -1,0 +1,17 @@
+name: Export my notion workspace
+
+on:
+  schedule:
+    - cron: "0 */24 * * *"  # Call the export every 24 hours
+  workflow_dispatch: {}
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: igor-kupczynski/notion-exporter@v1.0.2
+        with:
+          pages: "db01a4ff834648e68c2bdb4fe8edf979"  # Pages IDs identified in (step 2)  
+          output-dir: notion-backup
+          notion-token: ${{ secrets.NOTION_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
