@@ -20,7 +20,8 @@ A famous example of Association Mining is the **if-then** relationship found whe
 
 This is the association mining pipeline:
 
-![Untitled](CommonAlgorithmsExplained/Untitled.png)
+![Untitled](https://github.com/divyan/CommonAlgorithmsExplained/blob/main/Untitled.png?raw=true)
+
 
 The Apriori Algorithm is found in the second step of the pipeline. 
 
@@ -71,7 +72,7 @@ If $\{XY\}$ **is** a frequent itemset, both $\{X\}$ and $\{Y\}$**must** be a fre
 
 If  $\{XZ\}$ **is not** a frequent itemset then, $\{XYZ\}$ **cannot be** a frequent itemset.
 
-![Screen Shot 2022-04-03 at 2.56.28 PM.png](Apriori%20Algorithm%20db01a4ff834648e68c2bdb4fe8edf979/Screen_Shot_2022-04-03_at_2.56.28_PM.png)
+![Screen Shot 2022-04-03 at 2.56.28 PM.png](https://github.com/divyan/CommonAlgorithmsExplained/blob/main/Screen_Shot_2022-04-03_at_2.56.28_PM.png?raw=true)
 
 ---
 
@@ -79,13 +80,13 @@ If  $\{XZ\}$ **is not** a frequent itemset then, $\{XYZ\}$ **cannot be** a frequ
 
 Let’s consider this dataset of transactions at the Movie Theater
 
-![Screen Shot 2022-04-03 at 12.44.11 PM.png](Apriori%20Algorithm%20db01a4ff834648e68c2bdb4fe8edf979/Screen_Shot_2022-04-03_at_12.44.11_PM.png)
+![Screen Shot 2022-04-03 at 12.44.11 PM.png](https://github.com/divyan/CommonAlgorithmsExplained/blob/main/Screen_Shot_2022-04-03_at_12.44.11_PM.png?raw=true)
 
 Step 1: Find the frequencies of each item 
 
 Let’s create a frequency Table $L_{1}$ that contains the count of **1 item in the data set.**
 
-![Screen Shot 2022-04-03 at 1.03.07 PM.png](Apriori%20Algorithm%20db01a4ff834648e68c2bdb4fe8edf979/Screen_Shot_2022-04-03_at_1.03.07_PM.png)
+![Screen Shot 2022-04-03 at 1.03.07 PM.png](https://github.com/divyan/CommonAlgorithmsExplained/blob/main/Screen_Shot_2022-04-03_at_1.03.07_PM.png?raw=true)
 
 Step 2: Generate candidates 
 
@@ -110,7 +111,7 @@ Candy, nachos
 
  
 
-![Screen Shot 2022-04-03 at 3.49.41 PM.png](Apriori%20Algorithm%20db01a4ff834648e68c2bdb4fe8edf979/Screen_Shot_2022-04-03_at_3.49.41_PM.png)
+![Screen Shot 2022-04-03 at 3.49.41 PM.png](https://github.com/divyan/CommonAlgorithmsExplained/blob/main/Screen_Shot_2022-04-03_at_3.49.41_PM.png?raw=true)
 
 Step 4: Remove Entries with frequency < **minimum support count** 
 
@@ -124,7 +125,7 @@ $min \space support \space count \space =33 \times 6 \times 0.01 = 1.98 = 2$ **(
 
 Now, every entry under a frequency of 2 will be removed. 
 
-![Screen Shot 2022-04-03 at 1.43.50 PM.png](Apriori%20Algorithm%20db01a4ff834648e68c2bdb4fe8edf979/Screen_Shot_2022-04-03_at_1.43.50_PM.png)
+![Screen Shot 2022-04-03 at 1.43.50 PM.png](https://github.com/divyan/CommonAlgorithmsExplained/blob/main/Screen_Shot_2022-04-03_at_1.43.50_PM.png?raw=true)
 
 Step 4: Find the frequencies 
 
@@ -144,7 +145,7 @@ The self-join produces:
 
 For example, the subset { coke, nachos } is not in the previous frequency table $L_2$  so the entry { coke, candy, nachos } is discarded 
 
-![Screen Shot 2022-04-03 at 4.00.00 PM.png](Apriori%20Algorithm%20db01a4ff834648e68c2bdb4fe8edf979/Screen_Shot_2022-04-03_at_4.00.00_PM.png)
+![Screen Shot 2022-04-03 at 4.00.00 PM.png](https://github.com/divyan/CommonAlgorithmsExplained/blob/main/Screen_Shot_2022-04-03_at_4.00.00_PM.png?raw=true)
 
 Step 5: Remove Entries with frequency < **minimum support count**
 
@@ -156,7 +157,7 @@ In our case, all entries have a frequency that is above 2.
 
 As the final step, we will generate candidates into Table $C_4$, however, this entry does not exist in the original dataset so it can be discarded. 
 
-![Screen Shot 2022-04-03 at 2.23.49 PM.png](Apriori%20Algorithm%20db01a4ff834648e68c2bdb4fe8edf979/Screen_Shot_2022-04-03_at_2.23.49_PM.png)
+![Screen Shot 2022-04-03 at 2.23.49 PM.png](https://github.com/divyan/CommonAlgorithmsExplained/blob/main/Screen_Shot_2022-04-03_at_2.23.49_PM.png?raw=true)
 
 🏁 We have finished all the steps are we are left with 3 frequent itemsets: 
 
